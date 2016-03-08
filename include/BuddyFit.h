@@ -1,22 +1,17 @@
 #ifndef BUDDYFIT_H
 #define BUDDYFIT_H
-#include <string>
-#include "Area.h"
-#include "Fitter.h"
-using namespace std;
 
 
-class BuddyFit : public Area
+class BuddyFit : public Fitter
 {
 	public:
-		BuddyFit(string name, int base, int size);
+		BuddyFit();
 		~BuddyFit();
-		Area *alloc(int wanted);
-		void  free(Area *);
+		public Area *alloc(int wanted);
+		public void  free(Area *);
+		public void  report();
 	protected:
 	private:
-		void split();
-		string name;
 		/// Pointer to the left buddy in the tree
 		BuddyFit *buddyFitLeft;
 		/// Pointer to the right buddy in the tree
