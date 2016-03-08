@@ -13,9 +13,11 @@ class BuddyFit : public Area
 		~BuddyFit();
 		Area *alloc(int wanted);
 		void  free(Area *);
+		bool  isUsed();
+		void  setUsed(bool used);
 	protected:
 	private:
-		void split();
+		void divide();
 		string name;
 		/// Pointer to the left buddy in the tree
 		BuddyFit *buddyFitLeft;
