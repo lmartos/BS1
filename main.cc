@@ -36,7 +36,7 @@ using std::vector;
 //#include "WorstFit2.h"		// pas de naam aan aan jouw versie
 //#include "PowerOfTwo.h"	// pas de naam aan aan jouw versie
 //#include "McKusickK.h"	// pas de naam aan aan jouw versie
-//#include "Buddy.h"		// pas de naam aan aan jouw versie
+#include "Buddy.h"		// pas de naam aan aan jouw versie
 //enz
 
 
@@ -169,6 +169,9 @@ void	doOptions(int argc, char *argv[])
 				beheerders.push_back( new NextFit2 );
 				break;
 			// TODO:
+			case '2':	// -2 = buddy allocator gevraagd
+				beheerders.push_back( new Buddy(8) );
+				break;
 			/*
 			case 'b': // -b = BestFit allocator gevraagd
 				beheerders.push_back( new BestFit );
@@ -183,9 +186,6 @@ void	doOptions(int argc, char *argv[])
 				beheerders.push_back( new WorstFit2 );
 				break;
 				// enz
-			case '2':	// -2 = buddy allocator gevraagd
-				beheerders.push_back( new Buddy );
-				break;
 			*/
 
 			case -1: // = einde opties

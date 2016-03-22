@@ -1,0 +1,283 @@
+# depslib dependency file v1.0
+1458041754 source:c:\users\max\documents\workspace\c++\bs1\allocator.cc
+	"main.h"
+	"Allocator.h"
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\main.h
+	<iostream>
+	"common.h"
+	"ansi.h"
+	"asserts.h"
+	"Area.h"
+	"Allocator.h"
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\common.h
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\ansi.h
+	"common.h"
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\asserts.h
+	"where.h"
+	"assert_error.h"
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\where.h
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\assert_error.h
+	<stdexcept>
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\area.h
+	<iostream>
+	"asserts.h"
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\allocator.h
+	"Area.h"
+
+1458041754 source:c:\users\max\documents\workspace\c++\bs1\application.cc
+	<cstdlib>
+	"main.h"
+	"Stopwatch.h"
+	"Application.h"
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\stopwatch.h
+	<sys/resource.h>
+	<sys/times.h>
+	<times.h>
+	<time.h>
+	<sys/time.h>
+	<windows.h>
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\application.h
+	<list>
+	"Allocator.h"
+	"Area.h"
+
+1458041754 source:c:\users\max\documents\workspace\c++\bs1\area.cc
+	"asserts.h"
+	"Area.h"
+
+1458041754 source:c:\users\max\documents\workspace\c++\bs1\assert_error.cc
+	<string>
+	<sstream>
+	"assert_error.h"
+
+1458048394 source:c:\users\max\documents\workspace\c++\bs1\buddyfit.cpp
+	"BuddyFit.h"
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\buddyfit.h
+	<string>
+	"Area.h"
+	"Fitter.h"
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\fitter.h
+	<list>
+	"Allocator.h"
+
+1458041754 source:c:\users\max\documents\workspace\c++\bs1\firstfit.cc
+	"FirstFit.h"
+	"ansi.h"
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\firstfit.h
+	"Fitter.h"
+
+1458041754 source:c:\users\max\documents\workspace\c++\bs1\firstfit2.cc
+	"FirstFit2.h"
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\firstfit2.h
+	"FirstFit.h"
+
+1458041754 source:c:\users\max\documents\workspace\c++\bs1\fitter.cc
+	<cmath>
+	"ansi.h"
+	"Fitter.h"
+
+1458048932 source:c:\users\max\documents\workspace\c++\bs1\main.cc
+	<vector>
+	<cstdlib>
+	<getopt.h>
+	"main.h"
+	"RandomFit.h"
+	"FirstFit.h"
+	"FirstFit2.h"
+	"NextFit.h"
+	"NextFit2.h"
+	"Buddy.h"
+	"Application.h"
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\randomfit.h
+	"Allocator.h"
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\nextfit.h
+	"Fitter.h"
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\nextfit2.h
+	"NextFit.h"
+
+1458048872 c:\users\max\documents\workspace\c++\bs1\include\buddy.h
+	"BuddyFit.h"
+
+1458041754 c:\users\max\documents\workspace\c++\bs1\include\buddyfit.h
+	<string>
+	"Area.h"
+	"Fitter.h"
+
+1458041754 source:c:\users\max\documents\workspace\c++\bs1\nextfit.cc
+	"main.h"
+	"NextFit.h"
+	"ansi.h"
+
+1458041754 source:c:\users\max\documents\workspace\c++\bs1\nextfit2.cc
+	"NextFit2.h"
+
+1458041754 source:c:\users\max\documents\workspace\c++\bs1\randomfit.cc
+	"main.h"
+	"RandomFit.h"
+	<cstdlib>
+
+1458041754 source:c:\users\max\documents\workspaces\c++\bs1\allocator.cc
+	"main.h"
+	"Allocator.h"
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\main.h
+	<iostream>
+	"common.h"
+	"ansi.h"
+	"asserts.h"
+	"Area.h"
+	"Allocator.h"
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\common.h
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\ansi.h
+	"common.h"
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\asserts.h
+	"where.h"
+	"assert_error.h"
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\where.h
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\assert_error.h
+	<stdexcept>
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\area.h
+	<iostream>
+	"asserts.h"
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\allocator.h
+	"Area.h"
+
+1458041754 source:c:\users\max\documents\workspaces\c++\bs1\application.cc
+	<cstdlib>
+	"main.h"
+	"Stopwatch.h"
+	"Application.h"
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\stopwatch.h
+	<sys/resource.h>
+	<sys/times.h>
+	<times.h>
+	<time.h>
+	<sys/time.h>
+	<windows.h>
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\application.h
+	<list>
+	"Allocator.h"
+	"Area.h"
+
+1458041754 source:c:\users\max\documents\workspaces\c++\bs1\area.cc
+	"asserts.h"
+	"Area.h"
+
+1458041754 source:c:\users\max\documents\workspaces\c++\bs1\assert_error.cc
+	<string>
+	<sstream>
+	"assert_error.h"
+
+1458041754 source:c:\users\max\documents\workspaces\c++\bs1\firstfit.cc
+	"FirstFit.h"
+	"ansi.h"
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\firstfit.h
+	"Fitter.h"
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\fitter.h
+	<list>
+	"Allocator.h"
+
+1458041754 source:c:\users\max\documents\workspaces\c++\bs1\firstfit2.cc
+	"FirstFit2.h"
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\firstfit2.h
+	"FirstFit.h"
+
+1458041754 source:c:\users\max\documents\workspaces\c++\bs1\fitter.cc
+	<cmath>
+	"ansi.h"
+	"Fitter.h"
+
+1458048932 source:c:\users\max\documents\workspaces\c++\bs1\main.cc
+	<vector>
+	<cstdlib>
+	<getopt.h>
+	"main.h"
+	"RandomFit.h"
+	"FirstFit.h"
+	"FirstFit2.h"
+	"NextFit.h"
+	"NextFit2.h"
+	"Buddy.h"
+	"Application.h"
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\randomfit.h
+	"Allocator.h"
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\nextfit.h
+	"Fitter.h"
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\nextfit2.h
+	"NextFit.h"
+
+1458647753 c:\users\max\documents\workspaces\c++\bs1\include\buddy.h
+	"BuddyFit.h"
+
+1458647399 c:\users\max\documents\workspaces\c++\bs1\include\buddyfit.h
+	<string>
+	"../Area.h"
+	"../Fitter.h"
+
+1458041754 source:c:\users\max\documents\workspaces\c++\bs1\nextfit.cc
+	"main.h"
+	"NextFit.h"
+	"ansi.h"
+
+1458041754 source:c:\users\max\documents\workspaces\c++\bs1\nextfit2.cc
+	"NextFit2.h"
+
+1458041754 source:c:\users\max\documents\workspaces\c++\bs1\randomfit.cc
+	"main.h"
+	"RandomFit.h"
+	<cstdlib>
+
+1458048394 source:c:\users\max\documents\workspaces\c++\bs1\src\buddyfit.cpp
+	"BuddyFit.h"
+
+1458041754 source:c:\users\max\documents\workspaces\c++\bs1\stopwatch.cc
+	<iostream>
+	<cstdio>
+	"asserts.h"
+	"Stopwatch.h"
+	<unistd.h>
+	<time.h>
+
+1458041754 source:c:\users\max\documents\workspaces\c++\bs1\unix_error.cc
+	<cstring>
+	<cerrno>
+	<sstream>
+	"unix_error.h"
+
+1458041754 c:\users\max\documents\workspaces\c++\bs1\unix_error.h
+	<stdexcept>
+	<string>
+	"where.h"
+

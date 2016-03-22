@@ -38,6 +38,8 @@
 		<Unit filename="Application.h" />
 		<Unit filename="Area.cc" />
 		<Unit filename="Area.h" />
+		<Unit filename="BuddyFit.cpp" />
+		<Unit filename="BuddyFit.h" />
 		<Unit filename="FirstFit.cc" />
 		<Unit filename="FirstFit.h" />
 		<Unit filename="FirstFit2.cc" />
@@ -57,10 +59,10 @@
 		<Unit filename="assert_error.h" />
 		<Unit filename="asserts.h" />
 		<Unit filename="common.h" />
-		<Unit filename="include/BuddyFit.h" />
+		<Unit filename="include/Buddy.h" />
 		<Unit filename="main.cc" />
 		<Unit filename="main.h" />
-		<Unit filename="src/BuddyFit.cpp" />
+		<Unit filename="src/Buddy.cpp" />
 		<Unit filename="unix_error.cc" />
 		<Unit filename="unix_error.h" />
 		<Unit filename="where.h" />
