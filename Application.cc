@@ -228,7 +228,8 @@ void	Application::testing()
 					// Vraag om geheugen
 					ap = beheerder->alloc(size / 2);	// dit moet altijd kunnen
 					bp = new Area(*ap);					// dupliceer ap
-					beheerder->free(ap);				// het origineel vrij geven
+					beheerder->free(ap);
+					cout << "starting fail path" << endl;				// het origineel vrij geven
 					beheerder->free(bp);				// en de kopie vrij geven
 						// NB This test may cause a memory leak if
 						// 'beheerder->free' does not delete 'bp'

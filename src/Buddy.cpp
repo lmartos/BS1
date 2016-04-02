@@ -2,25 +2,35 @@
 #include <iostream>
 using namespace std;
 Buddy::Buddy()
-: Allocator(false, "buddy"),memoryControl()
+: Allocator(false, "buddy"),memoryControl(nullptr)
 {
 }
 
 Buddy::~Buddy()
 {
-	//doubledtor
+	delete memoryControl;
 }
 
 void Buddy::setSize(int size) {
 	Allocator::setSize(size);
-	new BuddyFit("main", 0, size);
+	memoryControl = new BuddyFit("main", 0, size);
 }
 
 Area* Buddy::alloc(int wanted) {
-	Area* area = memoryControl->alloc(wanted);
+
+
+	require(wanted > 0);		// has to be "something",
+	require(wanted <= size);
+
+	Area* area = 0;
+
+    cout << "boss wants some memory!" << endl;
+	area = memoryControl->alloc(wanted);
+
 
 	if (area == nullptr) {
-		//throw exception;
+        throw "unable to allocate area";
+		return nullptr;
 	} else {
 		updateStats(wanted, area->getSize());
 		return area;

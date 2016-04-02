@@ -244,6 +244,7 @@ int  main(int argc, char *argv[])
 			cout << beheerder->getType() << endl;
 			Application  *mp = new Application(beheerder, size);
 
+
 			if (tflag) {    // De -t optie gezien ?
 				cout << AC_BLUE "Testing " << beheerder->getType()
 					 << " with " << size << " units\n" AA_RESET;
