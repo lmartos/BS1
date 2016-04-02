@@ -42,13 +42,14 @@ Area* BuddyFit::alloc(int wanted){
 	return this;
 }
 
-void BuddyFit::free(Area *area){
+bool BuddyFit::free(Area *area){
+	bool hasMerged = false;
 
 	if(area->getBase() == this->getBase() && buddyFitLeft == nullptr && buddyFitRight == nullptr){
 		used = false;
-		return;
+		return false;
 	}else if (buddyFitLeft == nullptr && buddyFitRight == nullptr) {
-		return;
+		return false;
 		///kan de area niet vinden, klopt iets niet met de aangegeven memory. throw exception;
 	}else if(area->getBase() >= (this->getBase() + this->getSize()/2)){
 		buddyFitLeft->free(area);
@@ -61,7 +62,9 @@ void BuddyFit::free(Area *area){
 		delete buddyFitLeft;
 		delete buddyFitRight;
 		used = false;
+		hasMerged = true;
 	}
+	return hasMerged;
 }
 
 void BuddyFit::divide() {
@@ -72,3 +75,5 @@ void BuddyFit::divide() {
 		buddyFitRight = new BuddyFit(name + "R", childMemoryRight->getBase(), childMemoryRight->getSize());
 	}
 }
+
+

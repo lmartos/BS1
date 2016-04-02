@@ -216,7 +216,7 @@
 	"ansi.h"
 	"Fitter.h"
 
-1458048932 source:c:\users\max\documents\workspaces\c++\bs1\main.cc
+1458654126 source:c:\users\max\documents\workspaces\c++\bs1\main.cc
 	<vector>
 	<cstdlib>
 	<getopt.h>
@@ -238,10 +238,10 @@
 1458041754 c:\users\max\documents\workspaces\c++\bs1\nextfit2.h
 	"NextFit.h"
 
-1458647753 c:\users\max\documents\workspaces\c++\bs1\include\buddy.h
+1458653353 c:\users\max\documents\workspaces\c++\bs1\include\buddy.h
 	"BuddyFit.h"
 
-1458647399 c:\users\max\documents\workspaces\c++\bs1\include\buddyfit.h
+1458652179 c:\users\max\documents\workspaces\c++\bs1\include\buddyfit.h
 	<string>
 	"../Area.h"
 	"../Fitter.h"
@@ -259,7 +259,7 @@
 	"RandomFit.h"
 	<cstdlib>
 
-1458048394 source:c:\users\max\documents\workspaces\c++\bs1\src\buddyfit.cpp
+1458653469 source:c:\users\max\documents\workspaces\c++\bs1\src\buddyfit.cpp
 	"BuddyFit.h"
 
 1458041754 source:c:\users\max\documents\workspaces\c++\bs1\stopwatch.cc
@@ -280,4 +280,8 @@
 	<stdexcept>
 	<string>
 	"where.h"
+
+1458653384 source:c:\users\max\documents\workspaces\c++\bs1\src\buddy.cpp
+	"Buddy.h"
+	<iostream>
 

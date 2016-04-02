@@ -100,7 +100,7 @@ void	tellOptions(const char *progname)
 void	doOptions(int argc, char *argv[])
 {
 	// TODO:
-	char  options[] = "s:a:tvcrfFnN"; // De opties die we willen herkennen
+	char  options[] = "s:a:tvcrfFnN2"; // De opties die we willen herkennen
 	// Als je algoritmes toevoegt dan moet je de string hierboven uitbreiden.
 	// (Vergeet niet om de tellOptions functie hiervoor ook aan te passen)
 	// Als je alle algoritmes zou realiseren dan wordt
@@ -170,7 +170,7 @@ void	doOptions(int argc, char *argv[])
 				break;
 			// TODO:
 			case '2':	// -2 = buddy allocator gevraagd
-				beheerders.push_back( new Buddy(8) );
+				beheerders.push_back( new Buddy);
 				break;
 			/*
 			case 'b': // -b = BestFit allocator gevraagd
@@ -241,6 +241,7 @@ int  main(int argc, char *argv[])
 			beheerder->setCheck(cflag);
 
 			// ... en maak dan een pseudo-applicatie met die beheerder
+			cout << beheerder->getType() << endl;
 			Application  *mp = new Application(beheerder, size);
 
 			if (tflag) {    // De -t optie gezien ?

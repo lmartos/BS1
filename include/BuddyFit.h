@@ -12,7 +12,7 @@ class BuddyFit : public Area
 		BuddyFit(string name, int base, int size);
 		~BuddyFit();
 		Area *alloc(int wanted);
-		void  free(Area *);
+		bool  free(Area *);
 		bool  isUsed();
 		void  setUsed(bool used);
 	protected:
@@ -25,6 +25,7 @@ class BuddyFit : public Area
 		BuddyFit *buddyFitRight;
 		/// boolean that defines if all the memory is used from this buddy on
 		bool used;
+
 };
 
 #endif // BUDDYFIT_H

@@ -8,8 +8,14 @@ class Buddy : public Allocator
 	private:
 		BuddyFit* memoryControl;
 
+		long mergers;	///< how often we could merge fragmented space
+		long timesMemoryWasAllocated = 0;
+		double efficiencyInPercentages = 0; ///efficiency in percentages
+
+		void updateStats(int wanted, int allocated);
+
 	public:
-		Buddy(int size);
+		Buddy();
 		~Buddy();
 
 		/// Stel de omvang van het te beheren gebied in.
@@ -23,6 +29,7 @@ class Buddy : public Allocator
 		Area *alloc(int wanted);	///< Application vraagt om geheugen
 		void  free(Area *);			///< Application geeft een Area weer terug aan geheugenbeheer
 		void  report();				///< Report performance statistics
+
 
 		// ... en hier komen straks misschien nog andere functies ...
 		// ... om b.v. de overhead te bepalen ...
