@@ -368,7 +368,7 @@
 	"ansi.h"
 	"Fitter.h"
 
-1459607958 source:c:\users\nyuu1\documents\github\bs1\main.cc
+1459611967 source:c:\users\nyuu1\documents\github\bs1\main.cc
 	<vector>
 	<cstdlib>
 	<getopt.h>
@@ -411,7 +411,7 @@
 	"RandomFit.h"
 	<cstdlib>
 
-1459611868 source:c:\users\nyuu1\documents\github\bs1\src\buddyfit.cpp
+1460121721 source:c:\users\nyuu1\documents\github\bs1\src\buddyfit.cpp
 	"BuddyFit.h"
 
 1459593783 source:c:\users\nyuu1\documents\github\bs1\stopwatch.cc
@@ -433,7 +433,7 @@
 	<string>
 	"where.h"
 
-1459609738 source:c:\users\nyuu1\documents\github\bs1\src\buddy.cpp
+1460121426 source:c:\users\nyuu1\documents\github\bs1\src\buddy.cpp
 	"Buddy.h"
 	<iostream>
 

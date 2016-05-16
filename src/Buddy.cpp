@@ -29,7 +29,7 @@ Area* Buddy::alloc(int wanted) {
 
 
 	if (area == nullptr) {
-        throw "unable to allocate area";
+        cout << "unable to obtain memory" << endl;
 		return nullptr;
 	} else {
 		updateStats(wanted, area->getSize());
@@ -39,8 +39,13 @@ Area* Buddy::alloc(int wanted) {
 }
 
 void  Buddy::free(Area * area) {
+    try{
 	if (memoryControl->free(area))
 		mergers++;
+    }catch(...){
+        cout << "Oops something went wrong..." << endl;
+        return;
+    }
 }
 
 void Buddy::updateStats(int wanted, int allocated) {

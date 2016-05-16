@@ -50,7 +50,7 @@ bool BuddyFit::free(Area *area){
 	if(area->getBase() == this->getBase() && buddyFitLeft == nullptr && buddyFitRight == nullptr){
         if(!this->isUsed()){
         delete area;
-        throw "unidentified memory found";
+        throw std::logic_error("unidentified memory found");
         return false;
         }
 		used = false;
@@ -62,6 +62,7 @@ bool BuddyFit::free(Area *area){
         throw std::logic_error("Rogue memory detected - deleting rogue memory...");
         return false;
         }
+        return false;
 		///kan de area niet vinden, klopt iets niet met de aangegeven memory. throw exception;
 	}else if(area->getBase() >= (this->getBase() + this->getSize()/2)){
 	    cout << "its somewhere in the left subtree!" << endl;
