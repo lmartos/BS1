@@ -311,7 +311,7 @@
 1459593783 c:\users\nyuu1\documents\github\bs1\assert_error.h
 	<stdexcept>
 
-1459593783 c:\users\nyuu1\documents\github\bs1\area.h
+1463394901 c:\users\nyuu1\documents\github\bs1\area.h
 	<iostream>
 	"asserts.h"
 
@@ -390,11 +390,12 @@
 1459593783 c:\users\nyuu1\documents\github\bs1\nextfit2.h
 	"NextFit.h"
 
-1459607958 c:\users\nyuu1\documents\github\bs1\include\buddy.h
+1463399735 c:\users\nyuu1\documents\github\bs1\include\buddy.h
 	"BuddyFit.h"
 
-1459607958 c:\users\nyuu1\documents\github\bs1\include\buddyfit.h
+1463406722 c:\users\nyuu1\documents\github\bs1\include\buddyfit.h
 	<string>
+	<stack>
 	"../Area.h"
 	"../Fitter.h"
 
@@ -411,7 +412,7 @@
 	"RandomFit.h"
 	<cstdlib>
 
-1460121721 source:c:\users\nyuu1\documents\github\bs1\src\buddyfit.cpp
+1463407688 source:c:\users\nyuu1\documents\github\bs1\src\buddyfit.cpp
 	"BuddyFit.h"
 
 1459593783 source:c:\users\nyuu1\documents\github\bs1\stopwatch.cc
@@ -433,7 +434,7 @@
 	<string>
 	"where.h"
 
-1460121426 source:c:\users\nyuu1\documents\github\bs1\src\buddy.cpp
+1463403799 source:c:\users\nyuu1\documents\github\bs1\src\buddy.cpp
 	"Buddy.h"
 	<iostream>
 

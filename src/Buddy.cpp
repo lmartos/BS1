@@ -26,11 +26,18 @@ Area* Buddy::alloc(int wanted) {
 
     cout << "boss wants some memory!" << endl;
 	area = memoryControl->alloc(wanted);
-
+    cout << "memory allocated" << endl;
 
 	if (area == nullptr) {
+            cout << "memory was not found correctly" << endl;
+        if(memoryControl->isUsed()){
         cout << "unable to obtain memory" << endl;
 		return nullptr;
+        }else{
+            cout << "looping through right subtree" << endl;
+            area = memoryControl->getBuddyFitRight()->alloc(wanted);
+            return area;
+        }
 	} else {
 		updateStats(wanted, area->getSize());
 		return area;
@@ -43,8 +50,7 @@ void  Buddy::free(Area * area) {
 	if (memoryControl->free(area))
 		mergers++;
     }catch(...){
-        cout << "Oops something went wrong..." << endl;
-        return;
+       throw std::logic_error("this memory does not belong to us");
     }
 }
 

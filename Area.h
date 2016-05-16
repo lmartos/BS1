@@ -36,6 +36,7 @@ public:
 	/// @param	base	start adres
 	/// @param	size	omvang van het gebied
 	Area(int base, int size);
+	virtual ~Area() {}
 
 	// Maak de attribuutwaardes beschikbaar
 	int		getBase() const { return base; }	///< Vertel het begin adres
